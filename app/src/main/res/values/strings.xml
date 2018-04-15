@@ -73,6 +73,17 @@
 
     <!--Facebook strings-->
 
+    <string name="interpreter">Interpreter</string>
+    <string name="traslator">Traslator</string>
+    <string name="both">Both</string>
+    <string name="experiencia">Years of experience</string>
+    <string name="curriculum">Resume Curriculum</string>
+    <string name="available">Available</string>
+    <string name="attend_origen">Origin Attend</string>
+    <string name="radio_attend">Radio Attend</string>
+    <string name="mother_language">Mother Language</string>
+    <string name="service_profile">Service</string>
+    <string name="btn_register">Register</string>
     <string name="facebook_app_id">372758993192112</string>
     <string name="fb_login_protocol_scheme">fb372758993192112</string>
     <string name="title_activity_main2">Main2Activity</string>

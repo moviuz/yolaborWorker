@@ -48,11 +48,6 @@ import static mx.com.omnius.yolabor.YolaborApplication.requestQueue;
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener, AsyncTaskCompleteListener, Response.ErrorListener {
     private static String Name;
 
-
-
-
-
-
     View bg;
     EditText txtUsername, txtPassword;
     Button btnSignUp;
@@ -66,7 +61,7 @@ private static final String TAG ="FACELOG";
     protected void onCreate(Bundle savedInstanceState) {
 
         // Initialize Firebase Auth
-        mAuth = FirebaseAuth.getInstance();
+        //mAuth = FirebaseAuth.getInstance();
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
@@ -172,13 +167,13 @@ private static final String TAG ="FACELOG";
 
     @Override
     public void onStart() {
-        super.onStart();
+        super.onStart();/*
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
 
         if(currentUser != null ){
             updateUI();
-        }
+        }*/
 
     }
 

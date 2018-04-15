@@ -12,7 +12,14 @@ public class Constants {
     // no request
     public static final int NO_REQUEST = -1;
     public static final int NO_TIME = -1;
-
+    public static final String INTERPRETER = "Interpreter";
+    public static final String TRASLATOR = "Traslator";
+    public static final String CONSTRUCTION = "Construction";
+    public static final String RESTAURANTS = "Restaurants";
+    public static final String CLEANING = "Cleanning";
+    public static final int idCatrgory_language_mother = 4;
+    public static final String ISAVAILABLE = "Y";
+    public static final String NOTAVAILABLE = "N";
 
     public static final int MAP_ZOOM = 16;
 
@@ -28,6 +35,7 @@ public class Constants {
         public static final String SINGIN = HOST_URL + "yolabor/webresources/service/setWorker?";
         public static final String HISTORY = HOST_URL + "yolabor/webresources/service/getAllJobItemByWorker?";
         public static final String ALLCOMPANY = HOST_URL + "yolabor/webresources/service/getAllCompany?";
+        public static final String CATALOG_MOTHER_LANGUAGE = HOST_URL + "yolabor/webresources/service/getAllCatalog?";
 
 
     }
@@ -39,6 +47,7 @@ public class Constants {
         public static final int NEW_CLIENT = 3;
         public static final int HISTORY_CLIENT= 4;
         public static final int ALLCOMPANY = 5;
+        public static final int CATALOG_MOTHER_LANGUAGE = 6;
     }
 
     // webservice key constants
@@ -67,6 +76,7 @@ public class Constants {
         public static final String LONGITUATTEND = "longitudeAttend";
         public static final String RADIOATEEND = "radioAttend ";
         public static final String ADDRESATEND = "addressAttend ";
+        public static final String ID_CATEGORY = "idCategory";
 
 
 

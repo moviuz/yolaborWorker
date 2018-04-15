@@ -5,236 +5,505 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <ScrollView
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:layout_below="@+id/appbar"
-        android:clipToPadding="true"
-        android:fillViewport="false">
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/perfil"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/Boton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/appbar"
+                android:clipToPadding="false">
 
 
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:minHeight="250dp">
-
-
-            <LinearLayout
-                android:id="@+id/linearLayout"
-                android:layout_width="112dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:layout_marginStart="10dp"
-                android:orientation="vertical"
-                app:layout_constraintBottom_toTopOf="@+id/linearLayout11"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <ImageView
-                    android:id="@+id/image_perfi"
-                    android:layout_width="112dp"
-                    android:layout_height="86dp"
-                    app:srcCompat="@drawable/pacount" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/linearLayout11"
-                android:layout_width="365dp"
-                android:layout_height="337dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="5dp"
-                android:orientation="vertical"
-                app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-                <EditText
-                    android:id="@+id/cfirstname"
-                    style="@style/LoginSignUp5Input"
-                    android:hint="@string/first_name" />
-
-                <EditText
-                    android:id="@+id/clastname"
-                    style="@style/LoginSignUp5Input"
-                    android:hint="@string/last_name" />
-
-                <EditText
-                    android:id="@+id/cemail"
-                    style="@style/LoginSignUp5Input"
-                    android:hint="@string/email"
-                    android:inputType="textEmailAddress" />
-
-                <EditText
-                    android:id="@+id/cpassword"
-                    style="@style/LoginSignUp5Input"
-                    android:hint="@string/password"
-                    android:inputType="textPassword" />
-
-                <EditText
-                    android:id="@+id/cphone"
-                    style="@style/LoginSignUp5Input"
-                    android:hint="@string/phone"
-                    android:inputType="numberDecimal" />
-
-                <EditText
-                    android:id="@+id/citin"
-                    style="@style/LoginSignUp5Input"
-                    android:hint="@string/itin"
-                    android:inputType="numberDecimal" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/linearLayout9"
-                android:layout_width="0dp"
-                android:layout_height="38dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal"
-                app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="72dp"
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/birthdate"
-                    tools:layout_editor_absoluteY="35dp" />
-
-                <EditText
-                    android:id="@+id/cresult"
-                    android:layout_width="218dp"
-                    android:layout_height="26dp"
-                    android:background="@color/grey_10"
-                    android:backgroundTint="@color/activity16InputChatBackground"
-                    android:gravity="center"
-                    android:text="-"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textColor="@color/grey_90"
-                    android:textSize="12dp"
-                    tools:layout_editor_absoluteY="31dp" />
-
-                <ImageButton
-                    android:id="@+id/cbtn_date"
-                    android:layout_width="49dp"
-                    android:layout_height="wrap_content"
-                    android:background="@color/transparent"
-                    app:srcCompat="@drawable/ic_calendar"
-                    tools:ignore="MissingConstraints,VectorDrawableCompat"
-                    tools:layout_editor_absoluteY="31dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/linearLayout7"
-                android:layout_width="345dp"
-                android:layout_height="32dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal"
-                app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+                    android:layout_alignParentStart="true"
+                    android:minHeight="800dp">
 
 
-                <RadioGroup
-                    android:id="@+id/crgroup"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView6"
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/gender"
-                        tools:layout_editor_absoluteX="29dp"
-                        tools:layout_editor_absoluteY="173dp" />
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="4dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/linearLayout11"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
 
-                    <RadioButton
-                        android:id="@+id/raMale"
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/image_profile"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="@dimen/spacing_large"
+                            android:src="@drawable/acounts"
+
+                            app:civ_border_width="2dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout11"
+                        android:layout_width="365dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:ems="10"
+                            android:hint="@string/first_name"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <mx.com.omnius.yolabor.component.MyFontEdittextView
+                                android:id="@+id/txtFirstName"
+                                style="@style/LoginSignUp5Input" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:ems="10"
+                            android:hint="@string/last_name"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <mx.com.omnius.yolabor.component.MyFontEdittextView
+                                android:id="@+id/txtLastName"
+                                style="@style/LoginSignUp5Input" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:ems="10"
+                            android:hint="@string/email"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <mx.com.omnius.yolabor.component.MyFontEdittextView
+                                android:id="@+id/txtEmail"
+                                style="@style/LoginSignUp5Input"
+                                android:inputType="textEmailAddress" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:ems="10"
+                            android:hint="@string/password"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <mx.com.omnius.yolabor.component.MyFontEdittextView
+                                android:id="@+id/txtPassword"
+                                style="@style/LoginSignUp5Input"
+                                android:inputType="textPassword" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:ems="10"
+                            android:hint="@string/phone"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <mx.com.omnius.yolabor.component.MyFontEdittextView
+                                android:id="@+id/txtPhone"
+                                style="@style/LoginSignUp5Input"
+                                android:inputType="numberDecimal" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout9"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="72dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/birthdate"
+                            tools:layout_editor_absoluteY="35dp" />
+
+                        <TextView
+                            android:id="@+id/txtBirth"
+                            android:layout_width="218dp"
+                            android:layout_height="26dp"
+                            android:background="@color/grey_10"
+                            android:backgroundTint="@color/activity16InputChatBackground"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textColor="@color/grey_90"
+                            android:textSize="12dp"
+                            tools:layout_editor_absoluteY="31dp" />
+
+                        <ImageButton
+                            android:id="@+id/cbtn_date"
+                            android:layout_width="49dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            app:srcCompat="@drawable/ic_calendar"
+                            tools:ignore="MissingConstraints,VectorDrawableCompat"
+                            tools:layout_editor_absoluteY="31dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout7"
+                        android:layout_width="345dp"
+                        android:layout_height="32dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+
+                        <RadioGroup
+                            android:id="@+id/crgroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/gender"
+                                tools:layout_editor_absoluteX="29dp"
+                                tools:layout_editor_absoluteY="173dp" />
+
+                            <RadioButton
+                                android:id="@+id/raMale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/male"
+                                tools:layout_editor_absoluteX="234dp"
+                                tools:layout_editor_absoluteY="164dp" />
+
+                            <RadioButton
+                                android:id="@+id/raFemale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/female"
+                                tools:ignore="MissingConstraints"
+                                tools:layout_editor_absoluteX="106dp"
+                                tools:layout_editor_absoluteY="164dp" />
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout6"
+                        android:layout_width="341dp"
+                        android:layout_height="23dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="62dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/service_profile"
+                            tools:layout_editor_absoluteX="13dp" />
+
+                        <Spinner
+                            android:id="@+id/spinner_service"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            tools:layout_editor_absoluteX="85dp"
+                            tools:layout_editor_absoluteY="40dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout8"
+                        android:layout_width="339dp"
+                        android:layout_height="21dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mother_language"
+                            tools:layout_editor_absoluteX="16dp" />
+
+                        <Spinner
+                            android:id="@+id/spinner_mother_language"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            tools:layout_editor_absoluteX="86dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout44"
+                        android:layout_width="161dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="3dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/linearLayout45"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout48">
+
+                        <Switch
+                            android:id="@+id/switchAvailable"
+                            android:layout_width="138dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/available" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout45"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/male"
-                        tools:layout_editor_absoluteX="234dp"
-                        tools:layout_editor_absoluteY="164dp" />
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/linearLayout44"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout47"
+                        tools:ignore="MissingConstraints">>
 
-                    <RadioButton
-                        android:id="@+id/raFemale"
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:ems="10"
+                            android:hint="@string/experiencia"
+                            android:paddingLeft="0dp"
+                            android:paddingRight="10dp">
+
+                            <mx.com.omnius.yolabor.component.MyFontEdittextView
+                                android:id="@+id/txtExperiencia"
+                                style="@style/LoginSignUp5Input"
+                                android:layout_width="157dp"
+                                android:inputType="numberDecimal" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <ScrollView
+                        android:id="@+id/scrollView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/female"
-                        tools:ignore="MissingConstraints"
-                        tools:layout_editor_absoluteX="106dp"
-                        tools:layout_editor_absoluteY="164dp" />
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintBottom_toTopOf="@+id/linearLayout47"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">>
 
-                </RadioGroup>
+                        <LinearLayout
+                            android:id="@+id/linearLayout46"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="7dp"
+                            tools:layout_editor_absoluteY="579dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:ems="10"
+                                android:hint="@string/curriculum"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp">
 
 
-            </LinearLayout>
+                                <EditText
+                                    android:id="@+id/editResume"
+                                    android:layout_width="333dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:ems="10"
 
-            <LinearLayout
-                android:id="@+id/linearLayout6"
-                android:layout_width="341dp"
-                android:layout_height="23dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+                                    android:inputType="textMultiLine" />
+                            </android.support.design.widget.TextInputLayout>
 
-                <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="62dp"
-                    android:layout_height="wrap_content"
-                    android:text="Lenguage"
-                    tools:layout_editor_absoluteX="13dp" />
 
-                <Spinner
-                    android:id="@+id/spinner_company"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    tools:layout_editor_absoluteX="85dp"
-                    tools:layout_editor_absoluteY="40dp" />
+                        </LinearLayout>
+                    </ScrollView>
 
-            </LinearLayout>
 
-        </android.support.constraint.ConstraintLayout>
+                    <LinearLayout
+                        android:id="@+id/linearLayout48"
+                        android:layout_width="173dp"
+                        android:layout_height="21dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toTopOf="@+id/linearLayout44"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/linearLayout45"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout47"
+                        tools:ignore="MissingConstraints">
 
-    </ScrollView>
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="104dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="ans-serif-medium"
+                            android:gravity="center"
+                            android:text="@string/radio_attend"
+                            android:textSize="@dimen/spacing_large"
+                            tools:layout_editor_absoluteX="16dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="vertical">
+                        <Spinner
+                            android:id="@+id/spinnerRadioAttend"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
 
-        <Button
-            android:id="@+id/singinButton"
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout47"
+                        android:layout_width="365dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toTopOf="@+id/linearLayout48"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+                        tools:ignore="MissingConstraints">>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:ems="10"
+                            android:hint="@string/attend_origen"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="10dp">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/autComAttend"
+                                style="@style/LoginSignUp5Input"
+                                android:inputType="text|textCapWords|textAutoComplete" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+
+                </android.support.constraint.ConstraintLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Boton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/primary"
-            android:text="@string/create_account"
-            android:textColor="@color/icons" />
-    </LinearLayout>
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/perfil">
+
+            <Button
+                android:id="@+id/singinButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary"
+                android:text="@string/create_account"
+                android:textColor="@color/icons" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
 
 
 </RelativeLayout>

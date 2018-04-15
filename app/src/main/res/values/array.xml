@@ -21,6 +21,21 @@
         <item>@drawable/image_15</item>
     </integer-array>
 
+    <string-array name="services">
+        <item>Construction</item>
+        <item>Restaurants</item>
+        <item>Cleanning</item>
+
+    </string-array>
+
+    <string-array name="radioAttend">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
     <string-array name="sample_images_name">
         <item>Night Street</item>
         <item>Architect Desk</item>

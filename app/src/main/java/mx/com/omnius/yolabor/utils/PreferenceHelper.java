@@ -11,6 +11,7 @@ import com.google.android.gms.maps.model.LatLng;
 
 public class PreferenceHelper {
     private SharedPreferences app_prefs;
+    private final String AVAILABLE = "available";
     private final String USER_ID = "user_id";
     private final String DEVICE_TOKEN = "device_token";
     private final String SESSION_TOKEN = "session_token";
@@ -38,6 +39,11 @@ public class PreferenceHelper {
     private final String IS_NAVIGATE = "is_navigate";
     private final String DIST_LATITUDE = "dist_latitude";
     private final String DIST_LONGITUDE = "dist_longitude";
+    private final String SERVICE_TYPE = "service_type";
+    private final String ID_MOTHER_LANGUAGE = "id_mother_language";
+    private final String LONGITUDE_ATTEND = "longirude_attend";
+    private final String LATITUDE_ATTEND = "latitude_attend";
+    private final String RADIO_ATTEND = "radio_attend";
     // **********************************************************************************************************
 
     private final String CLIENT_ID = "client_id";
@@ -209,6 +215,50 @@ public String getLatitudeC(){ return  app_prefs.getString(LATITUDE_C, "");}
 
     public String getOwner() {
         return app_prefs.getString(OWNER, "");
+    }
+
+    public void putLongitudeAttend(String longitudeAttend) {
+        SharedPreferences.Editor edit = app_prefs.edit();
+        edit.putString(LONGITUDE_ATTEND, longitudeAttend);
+        edit.commit();
+
+    }
+
+    public String getLongitudeAttend() {
+        return app_prefs.getString(LONGITUDE_ATTEND, "");
+    }
+
+    public void putLatitudeAttend(String latitudeAttend) {
+        SharedPreferences.Editor edit = app_prefs.edit();
+        edit.putString(LATITUDE_ATTEND, latitudeAttend);
+        edit.commit();
+
+    }
+
+    public String getLatitudeAttend() {
+        return app_prefs.getString(LATITUDE_ATTEND, "");
+    }
+
+    public void putRadioAttend(String radioAttend) {
+        SharedPreferences.Editor edit = app_prefs.edit();
+        edit.putString(RADIO_ATTEND, radioAttend);
+        edit.commit();
+
+    }
+
+    public String getRadioAttend() {
+        return app_prefs.getString(RADIO_ATTEND, "");
+    }
+
+
+    public void putAvailable(String available) {
+        SharedPreferences.Editor edit = app_prefs.edit();
+        edit.putString(AVAILABLE, available);
+        edit.commit();
+
+    }
+    public String getAvailable() {
+        return app_prefs.getString(AVAILABLE, "");
     }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -521,7 +571,25 @@ public String getLatitudeC(){ return  app_prefs.getString(LATITUDE_C, "");}
 
 
 
+    public void putServiceType(String serviceType) {
+        SharedPreferences.Editor edit = app_prefs.edit();
+        edit.putString(SERVICE_TYPE, serviceType);
+        edit.commit();
 
+    }
 
+    public String getServiceType() {
+        return app_prefs.getString(SERVICE_TYPE, "");
+    }
 
+    public void putIdMotherLangugage(String idMotherLangugage) {
+        SharedPreferences.Editor edit = app_prefs.edit();
+        edit.putString(ID_MOTHER_LANGUAGE, idMotherLangugage);
+        edit.commit();
+
+    }
+
+    public String getIdMotherLangugage() {
+        return app_prefs.getString(ID_MOTHER_LANGUAGE, "");
+    }
 }

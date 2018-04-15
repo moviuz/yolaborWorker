@@ -1490,6 +1490,8 @@
     <!--Solicitudes Programadas-->
     <color name="grey_40">#999999</color>
     <color name="grey_10">#e6e6e6</color>
+    <!--COMPONENTE-->
+    <color name="color_hint_light">#cdcdcd</color>
 
 
 
