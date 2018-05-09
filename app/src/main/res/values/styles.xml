@@ -3,8 +3,8 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/ylabor</item>
+        <item name="colorPrimaryDark">@color/ylabor</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
     </style>
@@ -25,8 +25,8 @@
         <item name="android:textCursorDrawable">@drawable/loginsignup_color_cursor</item>
         <item name="android:textColor">@android:color/black</item>
     </style>
-    <style name="ButtonOrange" parent="@android:style/Widget.Button">
-        <item name="android:background">@color/button_orange</item>
+    <style name="ButtonOrange" parent="@android:style/Widget.Button">menumen
+        <item name="android:background">@color/ylabor</item>
     </style>
     <style name="ButtonWhite" parent="@android:style/Widget.Button">
         <item name="android:background">@color/button_white</item>
@@ -81,8 +81,8 @@
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Toolbar.Light" parent="@style/AppTheme">
-        <item name="colorControlNormal">@color/primary</item>
-        <item name="android:textColorPrimary">@color/primary</item>
+        <item name="colorControlNormal">@color/ylabor</item>
+        <item name="android:textColorPrimary">@color/ylabor</item>
     </style>
 
 

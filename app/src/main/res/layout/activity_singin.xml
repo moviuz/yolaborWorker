@@ -498,7 +498,7 @@
                 android:id="@+id/singinButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/primary"
+                android:background="?android:attr/colorPressedHighlight"
                 android:text="@string/create_account"
                 android:textColor="@color/icons" />
         </LinearLayout>

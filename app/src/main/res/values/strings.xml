@@ -92,4 +92,8 @@
     <string name="title_notifications">Notifications</string>
 
 
+    <!--OTHERS-->
+    <string name="tittle_profile">Profile</string>
+    <string name="category_skill">Category</string>
+
 </resources>

@@ -3,14 +3,12 @@ package mx.com.omnius.yolabor;
 import android.app.DatePickerDialog;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -149,10 +147,10 @@ public class ProfileActivity extends AppCompatActivity  {
 
 
         if (y =="M"){
-            radioGroup.check(R.id.raBtnTraslate);
+            radioGroup.check(R.id.raBtnFemale);
         }else {
 
-            radioGroup.check(R.id.raBtnInterpetre);
+            radioGroup.check(R.id.raBtnMale);
         }
 
 

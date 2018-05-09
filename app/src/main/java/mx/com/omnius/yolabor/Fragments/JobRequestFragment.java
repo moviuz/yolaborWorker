@@ -60,8 +60,8 @@ public class JobRequestFragment extends Fragment implements View.OnClickListener
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_job_request, container, false);
-        raBtnInter = (RadioButton) view.findViewById(R.id.raBtnInterpetre);
-        raBtnTras = (RadioButton) view.findViewById(R.id.raBtnTraslate);
+        raBtnInter = (RadioButton) view.findViewById(R.id.raBtnMale);
+        raBtnTras = (RadioButton) view.findViewById(R.id.raBtnFemale);
 //        raBtnInter.setOnClickListener(this);
 //        raBtnTras.setOnClickListener(this);
         btnDate = (ImageButton) view.findViewById(R.id.btn_date);
@@ -113,11 +113,11 @@ public class JobRequestFragment extends Fragment implements View.OnClickListener
     public void onClick(View view) {
 //    boolean checked = ((RadioButton) view).isChecked();
         switch (view.getId()) {
-            case R.id.raBtnInterpetre:
+            case R.id.raBtnMale:
                 // if (checked)
                 Toast.makeText(getContext(), "Interprete presionado", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.raBtnTraslate:
+            case R.id.raBtnFemale:
                 // if (checked)
                 Toast.makeText(getContext(), "Traslate Presionado", Toast.LENGTH_SHORT).show();
                 break;

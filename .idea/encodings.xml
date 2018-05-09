@@ -2,7 +2,16 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/app/src/debug/res/values/attr.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/mx/com/omnius/yolabor/Adapter/RVAdapter.java" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/mx/com/omnius/yolabor/Model/LanguajesModel.java" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/mx/com/omnius/yolabor/component/MyFontEdittextView.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/mx/com/omnius/yolabor/utils/SwipeItemTouchHelper.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/mx/com/omnius/yolabor/utils/SwipeUtil.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-v21/ic_swap_horiz.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tabs_basic.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_add_skill.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/item_swipe.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/item_swipe_undo.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/values-w820dp/attrs.xml" charset="ISO-8859-1" />
   </component>
 </project>

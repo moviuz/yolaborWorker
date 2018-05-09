@@ -5,12 +5,9 @@ import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.EditText;
-
 import mx.com.omnius.yolabor.R;
 
-/**
- * Created by UDIaz on 07/02/18.
- */
+
 
 public class MyFontEdittextView extends EditText {
 

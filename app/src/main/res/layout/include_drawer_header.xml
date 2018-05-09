@@ -9,8 +9,10 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:scaleType="centerCrop"
-        android:src="@drawable/material_bg_1" />
+        android:src="@drawable/bg_ylabor" />
 
     <com.mikhaellopez.circularimageview.CircularImageView
         android:id="@+id/avatar"

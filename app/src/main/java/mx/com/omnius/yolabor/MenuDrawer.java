@@ -24,6 +24,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.facebook.login.LoginManager;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -51,7 +52,7 @@ public class MenuDrawer extends AppCompatActivity  {
     private FirebaseAuth mAuth;
     private TabLayout tab_layout;
     private ViewPager view_pager;
-    private static final String[] pageTitle = {"Map","Request"};
+    private static final String[] pageTitle = {"Map"};
     private ActionBar actionBar;
     private Toolbar toolbar;
     private Menu menu_navigation;
@@ -65,8 +66,9 @@ public class MenuDrawer extends AppCompatActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // Initialize Firebase Auth
-        mAuth = FirebaseAuth.getInstance();
+        // Initialize Firebase Authti
+      //  FirebaseApp.initializeApp(this);
+     //   mAuth = FirebaseAuth.getInstance();
 
 
 
@@ -168,9 +170,9 @@ public class MenuDrawer extends AppCompatActivity  {
            drawer.closeDrawers();
        }else if  (item.getTitle().equals(getString(R.string.logout))){
 
-           mAuth.signOut();
+          /* mAuth.signOut();
            LoginManager.getInstance().logOut();
-           updateUI();
+           updateUI();*/
            Toast.makeText(this, "Cerrar sesion", Toast.LENGTH_SHORT).show();
            actionBar.setTitle(item.getTitle());
            drawer.closeDrawers();
@@ -193,7 +195,7 @@ public class MenuDrawer extends AppCompatActivity  {
     }
     private void setupTabIcons() {
         tab_layout.getTabAt(0).setIcon(R.drawable.ic_google_maps);
-        tab_layout.getTabAt(1).setIcon(R.drawable.ic_request);
+        //tab_layout.getTabAt(1).setIcon(R.drawable.ic_request);
 
     }
 
@@ -227,7 +229,7 @@ public class MenuDrawer extends AppCompatActivity  {
             super(manager);
             this.mFragmentList = new ArrayList<>();
             mFragmentList.add(new MapFragment());
-            mFragmentList.add(new JobRequestFragment());
+           // mFragmentList.add(new JobRequestFragment());
 
         }
 
@@ -249,7 +251,7 @@ public class MenuDrawer extends AppCompatActivity  {
             //return mFragmentTitleList.get(position);
         }
     }
-
+/*
     @Override
     public void onStart() {
         String x ;
@@ -269,7 +271,7 @@ public class MenuDrawer extends AppCompatActivity  {
         Intent Login = new Intent(MenuDrawer.this, LoginActivity.class);
         startActivity(Login);
 
-    }
+    }*/
 
 
 

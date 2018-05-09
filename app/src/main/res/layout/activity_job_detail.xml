@@ -55,7 +55,7 @@
                         tools:layout_editor_absoluteY="173dp" />
 
                     <RadioButton
-                        android:id="@+id/raBtnInterpetre"
+                        android:id="@+id/raBtnMale"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -64,7 +64,7 @@
                         tools:layout_editor_absoluteY="164dp" />
 
                     <RadioButton
-                        android:id="@+id/raBtnTraslate"
+                        android:id="@+id/raBtnFemale"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -441,9 +441,9 @@
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/primary"
+            android:background="@color/ylabor"
             android:text="@string/update_information"
-            android:textColor="@color/icons"/>
+            android:textColor="@color/icons" />
     </LinearLayout>
 
 
